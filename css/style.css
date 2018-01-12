@@ -1,0 +1,114 @@
+body{
+  padding:0;
+  margin:0;
+}
+
+.wrapper{
+  position:relative;
+ 
+}
+.wrapper h3,p{
+  font-family:"Roboto";
+  color:#666;
+}
+.wrapper .wrapper-content{
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  padding-top:40px;
+  
+}
+.wrapper .wrapper-content .btn{
+  background:#2DAF94;
+  color:#fff;
+  font-family:"Roboto";
+  padding:3px;
+  font-size:20px;
+  width:170px;
+  border-radius:10px;
+  border:0;
+}
+.wrapper .modal{
+  z-index:1;
+  background:rgba(20, 16, 16, 0.64);
+  width:100%;
+  min-height:100%;
+  top:0;
+  left:0;
+  bottom:0;
+  position:fixed;
+  display:none;
+  transition:all .3s ease-in-out;
+}
+.wrapper .modal-content{
+ border:1px solid #ccc;
+  max-width:500px;
+  margin:50px auto;
+  animation: 1s modal ;
+  background:#fff;
+  border-radius:6px;
+ width:500px;
+  position:absolute;
+ 
+   left: 29%;
+}
+
+@keyframes modal{
+  from{
+    transform:translateY(-400px);
+  }
+  to{
+    transform:translateY(0);
+  }
+}
+
+.wrapper .modal .modal_header,
+.wrapper  .modal .modal_footer{
+  border:1px solid rgba(204, 204, 204, 0.3);
+/*   box-shadow:0px 2px 4px #ccc,0px -2px 4px #ccc; */
+  padding:15px 15px;
+  color:#666;
+  font-family:Arial;
+  text-align:center;
+}
+.wrapper  .modal .modal_body{
+  padding:40px;
+  color:#666;
+  font-size:20px;
+}
+.wrapper  .modal .modal_footer .btn-close{
+  padding:6px 10px;
+  background:#fff;
+  font-size:16px;
+  float:right;
+  color:#666;
+  border:1px solid #ccc;
+  width:60px;
+   font-family:"Roboto";
+  transition:all .3s ease-in-out;
+  border-radius:4px;
+  cursor:pointer;
+  border:1px solid #666;
+}
+.wrapper  .modal .modal_footer .btn-save{
+  padding:6px 10px;
+  cursor:pointer;
+  background:#4586FF;
+  margin-right:4px;
+  transition:all .3s ease-in-out;
+  float:right;
+  color:#fff;
+  font-family:"Roboto";
+  font-size:16px;
+  border:1px solid #4586FF;
+  width:100px;
+  border-radius:4px;
+}
+.wrapper  .modal .modal_footer .btn-save:hover{
+  background:#065dff
+}
+.wrapper  .modal .modal_footer .btn-close:hover{
+  background:#ccc;
+  border:1px solid #ccc;
+}
